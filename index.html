@@ -1,111 +1,87 @@
-<!DOCTYPE html>
+html<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Cozy Petal | Boutique Florist</title>
-    <!-- Tailwind CSS -->
-    <script src="https://tailwindcss.com"></script>
-    <!-- Google Fonts (Serif & Sans) -->
+    <!-- Tailwind CSS Play CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://googleapis.com">
     <link rel="preconnect" href="https://gstatic.com" crossorigin>
-    <link href="https://googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400;0,600;1,400&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
-    <!-- FontAwesome for Icons -->
+    <link href="https://googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cloudflare.com">
     
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        serif: ['"Playfair Display"', 'serif'],
-                        sans: ['"Instrument Sans"', 'sans-serif'],
-                    },
-                    colors: {
-                        cozy: {
-                            cream: '#FDFBF7',
-                            sage: '#8A9A86',
-                            lightSage: '#EBEFEA',
-                            terracotta: '#C87A65',
-                            clay: '#4A3728',
-                            blush: '#F5E6E3'
-                        }
-                    }
-                }
-            }
-        }
-    </script>
     <style>
-        body { font-family: 'Instrument Sans', sans-serif; background-color: #FDFBF7; color: #4A3728; }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #FDFBF7; color: #4A3728; }
         .font-serif { font-family: 'Playfair Display', serif; }
     </style>
 </head>
-<body class="bg-cozy-cream text-cozy-clay antialiased">
+<body class="antialiased">
 
     <!-- Header / Navigation -->
-    <header class="border-b border-cozy-blush sticky top-0 bg-cozy-cream/90 backdrop-blur-md z-50">
+    <header class="border-b border-[#F5E6E3] sticky top-0 bg-[#FDFBF7]/90 backdrop-blur-md z-50">
         <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="#" class="font-serif text-2xl tracking-wide font-600 text-cozy-terracotta">the cozy petal.</a>
-            <nav class="hidden md:flex space-x-8 text-sm tracking-medium font-medium">
-                <a href="#about" class="hover:text-cozy-sage transition">Our Story</a>
-                <a href="#gallery" class="hover:text-cozy-sage transition">Seasonal Collections</a>
-                <a href="#booking" class="hover:text-cozy-sage transition">Custom Arrangements</a>
+            <a href="#" class="font-serif text-2xl tracking-wide font-semibold text-[#C87A65]">the cozy petal.</a>
+            <nav class="hidden md:flex space-x-8 text-sm font-medium">
+                <a href="#gallery" class="hover:text-[#8A9A86] transition">Seasonal Collections</a>
+                <a href="#booking" class="hover:text-[#8A9A86] transition">Custom Arrangements</a>
             </nav>
-            <a href="#booking" class="bg-cozy-sage text-white px-5 py-2 rounded-full text-sm font-medium hover:bg-cozy-clay transition shadow-sm">Book a Consultation</a>
+            <a href="#booking" class="bg-[#8A9A86] text-white px-5 py-2 rounded-full text-sm font-medium hover:bg-[#4A3728] transition shadow-sm">Book a Consultation</a>
         </div>
     </header>
 
     <!-- Hero Section -->
     <section class="max-w-6xl mx-auto px-6 py-16 md:py-24 grid md:grid-cols-2 gap-12 items-center">
         <div>
-            <span class="text-cozy-sage font-serif italic text-lg block mb-3">Fresh, local, and crafted with love</span>
-            <h1 class="font-serif text-4xl md:text-6xl font-600 leading-tight mb-6">Bringing nature's quiet comfort into your home.</h1>
+            <span class="text-[#8A9A86] font-serif italic text-lg block mb-3">Fresh, local, and crafted with love</span>
+            <h1 class="font-serif text-4xl md:text-6xl font-semibold leading-tight mb-6 text-[#4A3728]">Bringing nature's quiet comfort into your home.</h1>
             <p class="text-gray-600 mb-8 max-w-md leading-relaxed">We source seasonal blooms from local growers to design whimsical, earth-toned arrangements that speak to the heart.</p>
             <div class="flex space-x-4">
-                <a href="#gallery" class="bg-cozy-terracotta text-white px-6 py-3 rounded-md hover:bg-opacity-90 transition">Explore Blooms</a>
-                <a href="#about" class="border border-cozy-sage text-cozy-sage px-6 py-3 rounded-md hover:bg-cozy-lightSage transition">Our Philosophy</a>
+                <a href="#gallery" class="bg-[#C87A65] text-white px-6 py-3 rounded-md hover:bg-opacity-90 transition font-medium">Explore Blooms</a>
             </div>
         </div>
         <div class="relative">
-            <div class="absolute -inset-2 bg-cozy-blush rounded-2xl -rotate-2 z-0"></div>
-            <img src="https://unsplash.com" alt="Beautiful cozy florist workspace" class="rounded-2xl shadow-md relative z-10 w-full h-[450px] object-cover">
+            <div class="absolute -inset-2 bg-[#F5E6E3] rounded-2xl -rotate-2 z-0"></div>
+            <img src="https://unsplash.com" alt="Cozy florist workspace" class="rounded-2xl shadow-md relative z-10 w-full h-[450px] object-cover">
         </div>
     </section>
 
     <!-- Seasonal Gallery Section -->
-    <section id="gallery" class="bg-cozy-lightSage/50 py-16">
+    <section id="gallery" class="bg-[#EBEFEA]/50 py-16">
         <div class="max-w-6xl mx-auto px-6">
             <div class="text-center mb-12">
-                <h2 class="font-serif text-3xl md:text-4xl mb-3">The Autumn Collection</h2>
+                <h2 class="font-serif text-3xl md:text-4xl mb-3 text-[#4A3728]">The Autumn Collection</h2>
                 <p class="text-gray-600">Handpicked dynamic structures and rich textures available this month.</p>
             </div>
             
             <div class="grid md:grid-cols-3 gap-8">
                 <!-- Bouquet 1 -->
-                <div class="bg-cozy-cream rounded-xl overflow-hidden shadow-sm hover:shadow-md transition">
+                <div class="bg-[#FDFBF7] rounded-xl overflow-hidden shadow-sm hover:shadow-md transition">
                     <img src="https://unsplash.com" alt="Rustic bouquet" class="w-full h-64 object-cover">
                     <div class="p-6">
-                        <h3 class="font-serif text-xl mb-1">Rustic Earth</h3>
+                        <h3 class="font-serif text-xl mb-1 text-[#4A3728]">Rustic Earth</h3>
                         <p class="text-sm text-gray-500 mb-4">Dried eucalyptus, terracotta roses, and pampas grass.</p>
-                        <span class="text-cozy-terracotta font-medium">$65.00</span>
+                        <span class="text-[#C87A65] font-semibold">$65.00</span>
                     </div>
                 </div>
                 <!-- Bouquet 2 -->
-                <div class="bg-cozy-cream rounded-xl overflow-hidden shadow-sm hover:shadow-md transition">
+                <div class="bg-[#FDFBF7] rounded-xl overflow-hidden shadow-sm hover:shadow-md transition">
                     <img src="https://unsplash.com" alt="Blush bouquet" class="w-full h-64 object-cover">
                     <div class="p-6">
-                        <h3 class="font-serif text-xl mb-1">Blush Meadow</h3>
+                        <h3 class="font-serif text-xl mb-1 text-[#4A3728]">Blush Meadow</h3>
                         <p class="text-sm text-gray-500 mb-4">Soft pink peonies, wild chamomile, and sage greens.</p>
-                        <span class="text-cozy-terracotta font-medium">$72.00</span>
+                        <span class="text-[#C87A65] font-semibold">$72.00</span>
                     </div>
                 </div>
                 <!-- Bouquet 3 -->
-                <div class="bg-cozy-cream rounded-xl overflow-hidden shadow-sm hover:shadow-md transition">
+                <div class="bg-[#FDFBF7] rounded-xl overflow-hidden shadow-sm hover:shadow-md transition">
                     <img src="https://unsplash.com" alt="Minimalist bouquet" class="w-full h-64 object-cover">
                     <div class="p-6">
-                        <h3 class="font-serif text-xl mb-1">Quiet Minimalist</h3>
+                        <h3 class="font-serif text-xl mb-1 text-[#4A3728]">Quiet Minimalist</h3>
                         <p class="text-sm text-gray-500 mb-4">White ranunculus paired delicately with olive branches.</p>
-                        <span class="text-cozy-terracotta font-medium">$58.00</span>
+                        <span class="text-[#C87A65] font-semibold">$58.00</span>
                     </div>
                 </div>
             </div>
@@ -114,39 +90,39 @@
 
     <!-- Consultation/Booking Form Section -->
     <section id="booking" class="max-w-4xl mx-auto px-6 py-20">
-        <div class="bg-cozy-blush/40 border border-cozy-blush rounded-2xl p-8 md:p-12 shadow-sm">
+        <div class="bg-[#F5E6E3]/30 border border-[#F5E6E3] rounded-2xl p-8 md:p-12 shadow-sm">
             <div class="text-center max-w-xl mx-auto mb-10">
-                <i class="fa-solid fa-leaf text-cozy-sage text-2xl mb-3"></i>
-                <h2 class="font-serif text-3xl mb-3">Request a Custom Arrangement</h2>
-                <p class="text-gray-600 text-sm">Planning an intimate dinner, event, or want to subscribe for fresh weekly home deliveries? Let us know what you envision.</p>
+                <i class="fa-solid fa-leaf text-[#8A9A86] text-2xl mb-3"></i>
+                <h2 class="font-serif text-3xl mb-3 text-[#4A3728]">Request a Custom Arrangement</h2>
+                <p class="text-gray-600 text-sm">Planning an intimate dinner or want weekly home deliveries? Let us know what you envision.</p>
             </div>
             
-            <form onsubmit="event.preventDefault(); alert('Thank you! Your custom flower request has been received.');" class="space-y-6">
+            <form onsubmit="event.preventDefault(); alert('Thank you! Request received.');" class="space-y-6">
                 <div class="grid md:grid-cols-2 gap-6">
                     <div>
                         <label class="block text-xs uppercase tracking-wider font-semibold mb-2 text-gray-600">Your Name</label>
-                        <input type="text" required class="w-full px-4 py-3 rounded-md border border-gray-200 focus:outline-none focus:border-cozy-sage bg-cozy-cream">
+                        <input type="text" required class="w-full px-4 py-3 rounded-md border border-gray-200 focus:outline-none focus:border-[#8A9A86] bg-[#FDFBF7]">
                     </div>
                     <div>
                         <label class="block text-xs uppercase tracking-wider font-semibold mb-2 text-gray-600">Email Address</label>
-                        <input type="email" required class="w-full px-4 py-3 rounded-md border border-gray-200 focus:outline-none focus:border-cozy-sage bg-cozy-cream">
+                        <input type="email" required class="w-full px-4 py-3 rounded-md border border-gray-200 focus:outline-none focus:border-[#8A9A86] bg-[#FDFBF7]">
                     </div>
                 </div>
                 <div>
                     <label class="block text-xs uppercase tracking-wider font-semibold mb-2 text-gray-600">Vibe or Palette Preferences</label>
-                    <textarea rows="4" placeholder="e.g. Earthy and moody with deep reds, or bright and clean with lots of whites..." class="w-full px-4 py-3 rounded-md border border-gray-200 focus:outline-none focus:border-cozy-sage bg-cozy-cream"></textarea>
+                    <textarea rows="4" placeholder="Earthy, warm, neutrals..." class="w-full px-4 py-3 rounded-md border border-gray-200 focus:outline-none focus:border-[#8A9A86] bg-[#FDFBF7]"></textarea>
                 </div>
                 <div class="text-center">
-                    <button type="submit" class="bg-cozy-clay text-white px-8 py-3 rounded-md font-medium hover:bg-opacity-95 transition tracking-wide shadow-sm">Send Consultation Request</button>
+                    <button type="submit" class="bg-[#4A3728] text-white px-8 py-3 rounded-md font-medium hover:bg-opacity-95 transition tracking-wide shadow-sm">Send Consultation Request</button>
                 </div>
             </form>
         </div>
     </section>
 
     <!-- Simple Footer -->
-    <footer class="border-t border-cozy-blush py-8 text-center text-xs text-gray-500">
-        <p class="font-serif italic text-base text-cozy-clay mb-2">the cozy petal.</p>
-        <p>&copy; 2026 Crafted for Daily Coding Projects. Free to use.</p>
+    <footer class="border-t border-[#F5E6E3] py-8 text-center text-xs text-gray-500">
+        <p class="font-serif italic text-base text-[#4A3728] mb-2">the cozy petal.</p>
+        <p>&copy; 2026 Daily Coding Projects. Free to use.</p>
     </footer>
 
 </body>
